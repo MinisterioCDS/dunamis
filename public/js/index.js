@@ -24,7 +24,7 @@ btn.addEventListener("click", e => {
   if(phone.value.length !== 10) return alert("El celular debe tener diez números");
   popup.classList.add('active');
   confe.classList.add('active');
-  fetch("http://localhost:3000", {
+  fetch(process.env.URL, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"

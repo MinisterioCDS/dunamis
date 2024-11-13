@@ -1,4 +1,4 @@
-fetch("http://localhost:3000/inscriptos").then(res => res.json().then(response => {
+fetch(`${process.env.URL}/inscriptos`).then(res => res.json().then(response => {
   // console.log(response.jovenes);
   const body = document.getElementsByTagName("body")[0];
   const count = document.createElement("h3");
