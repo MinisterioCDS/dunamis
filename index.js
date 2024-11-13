@@ -50,7 +50,7 @@ app.get("/inscriptos", async (req, res) => {
 // conectar a la base de datos
 
 const dbCon = async () => {
-  await mongoose.connect(`mongodb+srv://${USER_DB}:${PASSWORD_DB}@dunamis.i9lrb.mongodb.net/`);
+  await mongoose.connect(`mongodb+srv://ministeriocdsoficial:gcNlAMdOlIfb0tX0@dunamis.i9lrb.mongodb.net/`);
 };
 
 dbCon().then(() => {
